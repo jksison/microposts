@@ -23,6 +23,7 @@ class UI {
 
                   <a href="#" class="delete card-link" data-id="${post.id}">
                   <i class="fa fa-remove"></i>
+                  </a>
                </div>
             </div>
          `;
