@@ -40,7 +40,13 @@ class EasyHTTP {
          },
       });
       
-      const respData = await 'Resource deleted...';
+      const respData = await response;
+      if (respData.status === 200) {  
+         console.log('Resource deleted...')  ;
+      } else {
+         console.error(respData);
+      }
+
       return respData;
    }
 }
